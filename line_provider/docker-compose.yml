@@ -1,0 +1,10 @@
+# Docker compose file for local development
+
+version: "3.9"
+
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: dockerfile
+    env_file: .env
